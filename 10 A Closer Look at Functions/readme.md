@@ -1,1 +1,1 @@
-## _10 A Closer Look at Functions_
+## _A Closer Look at Functions_
