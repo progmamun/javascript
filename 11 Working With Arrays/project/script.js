@@ -92,3 +92,4 @@ const displayMovements = function (movements) {
   });
 };
 displayMovements(account1.movements);
+
