@@ -1,4 +1,4 @@
-# working with arr
+# working with array
 
 ## Data Transformations with Map, Filter and Reduce
 
