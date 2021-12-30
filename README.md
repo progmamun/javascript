@@ -1,5 +1,9 @@
 # Complete-Javascript
 
+# What is JavaScript?
+
+- JAVASCRIPT IS A HIGH-LEVEL PROTOTYPE-BASED OBJECT-ORIENTED MULTI-PARADIGM INTERPRETED OR JUST-IN-TIME COMPILED DYNAMIC SINGLE-THREADED GARBAGE-COLLECTED PROGRAMMING LANGUAGE WITH FIRST-CLASS FUNCTIONS AND A NON-BLOCKING EVENT LOOP CONCURRENCY MODEL. 🙂🙂🙂
+
 # Which array method to use? "I want..:"
 
 | To mutate original array                                                                        | A new array                                                                                                                                               |
