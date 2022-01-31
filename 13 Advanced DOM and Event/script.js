@@ -34,7 +34,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 // Selecting elements
-document.querySelector('.header');
+const header = document.querySelector('.header');
 const allSections = document.querySelectorAll('.section');
 
 document.getElementById('section--1');
@@ -42,3 +42,10 @@ const allButtons = document.getElementsByTagName('button');
 
 // Creating and inserting elements
 // insertAdjacentHTML
+const message = document.createElement('div');
+message.classList.add('cookie-message');
+
+message.innerHTML =
+  'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
+
+header.prepend(message);
