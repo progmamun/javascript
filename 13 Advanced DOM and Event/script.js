@@ -32,3 +32,13 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
+
+// Selecting elements
+document.querySelector('.header');
+const allSections = document.querySelectorAll('.section');
+
+document.getElementById('section--1');
+const allButtons = document.getElementsByTagName('button');
+
+// Creating and inserting elements
+// insertAdjacentHTML

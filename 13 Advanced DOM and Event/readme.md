@@ -1,1 +1,3 @@
 - `e.preventDefault` Blocking default click handling, when we click anchor link # , jumped top of the page but this code fixed it.
+- `getElementsByTagName` | `getElementsByClassName` html collection we can deleted html tag from javascript.
+- `querySelector`
