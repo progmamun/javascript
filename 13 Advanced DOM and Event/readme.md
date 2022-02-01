@@ -5,3 +5,7 @@
 
 - Window.getComputedStyle() | The Window.getComputedStyle() method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain.
 - .setProperty() | The CSSStyleDeclaration.setProperty() method interface sets a new value for a property on a CSS style declaration object.
+
+---
+
+- .getAttribute() | The getAttribute() method of the Element interface returns the value of a specified attribute on the element.

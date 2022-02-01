@@ -70,3 +70,17 @@ message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
 
 document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+// Attributes
+const logo = document.querySelector('.nav__logo');
+
+logo.alt = 'Beautiful minimalist logo';
+
+// logo.getAttribute('src');
+
+// Non-standard
+logo.setAttribute('company', 'Bankist');
+const link = document.querySelector('.nav__link--btn');
+
+console.log(link.href);
+console.log(link.getAttribute('href'));
