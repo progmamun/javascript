@@ -87,3 +87,9 @@ console.log(link.getAttribute('href'));
 
 // Data Attribute
 console.log(logo.dataset.versionNumber); //use camelCase instead of data-version-number
+
+// Classes
+logo.classList.add('c');
+logo.classList.remove('c');
+logo.classList.toggle('c');
+logo.classList.contains('c');

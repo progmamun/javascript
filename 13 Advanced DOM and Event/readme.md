@@ -11,3 +11,12 @@
 - .getAttribute() | The getAttribute() method of the Element interface returns the value of a specified attribute on the element.
 
 - Data Attribute |`console.log(logo.dataset.versionNumber); //use camelCase instead of data-version-number`
+
+## ClassList | The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list.
+
+```
+logo.classList.add('c');
+logo.classList.remove('c');
+logo.classList.toggle('c');
+logo.classList.contains('c');
+```
