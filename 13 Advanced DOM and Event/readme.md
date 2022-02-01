@@ -9,3 +9,5 @@
 ---
 
 - .getAttribute() | The getAttribute() method of the Element interface returns the value of a specified attribute on the element.
+
+- Data Attribute |`console.log(logo.dataset.versionNumber); //use camelCase instead of data-version-number`
