@@ -33,7 +33,7 @@ logo.classList.contains('c');
 
 ## DOM Traversing
 
-- Going downwards: child
+- Going downwards: child | **querySelector** no matter how deep in the Dom tree
   ```
   h1.querySelectorAll('.highlight');
   h1.childNodes;
@@ -41,4 +41,13 @@ logo.classList.contains('c');
   h1.firstElementChild.style.color = 'white';
   h1.lastElementChild.style.color = 'orangered';
   ```
-- Going Upwards: Parents
+- Going Upwards: Parents| **closest** find parents no matter how far up in the DOM tree.
+
+```
+h1.parentNode;
+h1.parentElement;
+
+**h1.closest('.header').style.background = 'var(--gradient-secondary)';**
+```
+
+**closest** _most important_
