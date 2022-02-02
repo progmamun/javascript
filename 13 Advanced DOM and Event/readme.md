@@ -30,3 +30,15 @@ logo.classList.contains('c');
 2. Determine what element originated the event
 
 `e.preventDefault();`
+
+## DOM Traversing
+
+- Going downwards: child
+  ```
+  h1.querySelectorAll('.highlight');
+  h1.childNodes;
+  h1.children;
+  h1.firstElementChild.style.color = 'white';
+  h1.lastElementChild.style.color = 'orangered';
+  ```
+- Going Upwards: Parents
