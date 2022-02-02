@@ -68,3 +68,5 @@ h1.parentElement.children;
 ```
 
 ## Tab- tabbed Component
+
+## Guard Clause `if (!clicked) return;`
