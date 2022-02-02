@@ -20,3 +20,6 @@ logo.classList.remove('c');
 logo.classList.toggle('c');
 logo.classList.contains('c');
 ```
+
+- `<h1 onclick="alert('html alert')">` | event function in html old style.
+-
