@@ -22,4 +22,5 @@ logo.classList.contains('c');
 ```
 
 - `<h1 onclick="alert('html alert')">` | event function in html old style.
-- Bubbling Phase| and Capturing Phase| event | `event.stopPropagation(); bubbling`
+- Bubbling Phase (up)| and Capturing Phase(down)| event | `event.stopPropagation(); bubbling`
+- event Delegation |

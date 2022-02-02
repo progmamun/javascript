@@ -93,9 +93,13 @@ document.querySelector('.nav__link').addEventListener('click', function (e) {
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   this.style.backgroundColor = randomColor();
 });
-document.querySelector('.nav').addEventListener('click', function (e) {
-  this.style.backgroundColor = randomColor();
-});
+document.querySelector('.nav').addEventListener(
+  'click',
+  function (e) {
+    this.style.backgroundColor = randomColor();
+  }
+  // true //Capturing
+);
 
 //=============== Example how to DOM work ======================//
 /*
