@@ -66,6 +66,18 @@ btnScrollTo.addEventListener('click', function (e) {
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
+//=======================//
+//=== Page Navigation =//
+document.querySelectorAll('.nav__link').forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    e.preventDefault();
+    const id = this.getAttribute('href');
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
 //============= EventListener =================//
 /*
 const h1 = document.querySelector('h1');
