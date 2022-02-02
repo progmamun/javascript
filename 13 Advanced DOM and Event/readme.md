@@ -66,3 +66,5 @@ h1.parentElement.children;
   if(el !== h1) el.style.transform = 'scale(0.5)';
 });
 ```
+
+## Tab- tabbed Component
