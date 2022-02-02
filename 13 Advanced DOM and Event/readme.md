@@ -51,3 +51,18 @@ h1.parentElement;
 ```
 
 **closest** _most important_
+
+- Going Sideways: siblings | **nextElementSibling**
+
+```
+h1.previousElementSibling;
+h1.nextElementSibling;
+
+h1.previousSibling;
+h1.nextSibling;
+
+h1.parentElement.children;
+[...h1.parentElement.children].forEach(function (el) {
+  if(el !== h1) el.style.transform = 'scale(0.5)';
+});
+```
