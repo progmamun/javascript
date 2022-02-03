@@ -79,3 +79,5 @@ threshold: 0,
 // rootMargin: '-90px',
 rootMargin: `-${navHeight}px`,
 };
+
+# Revealing Elements on Scroll
