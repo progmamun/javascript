@@ -70,3 +70,10 @@ h1.parentElement.children;
 ## Tab- tabbed Component
 
 ## Guard Clause `if (!clicked) return;`
+
+# The Intersection Observer API
+
+const obsOptions = {
+root: null,
+threshold: 0.1
+};
