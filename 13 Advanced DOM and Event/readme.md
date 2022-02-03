@@ -75,5 +75,7 @@ h1.parentElement.children;
 
 const obsOptions = {
 root: null,
-threshold: 0.1
+threshold: 0,
+// rootMargin: '-90px',
+rootMargin: `-${navHeight}px`,
 };
