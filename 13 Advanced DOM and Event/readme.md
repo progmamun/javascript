@@ -81,3 +81,28 @@ rootMargin: `-${navHeight}px`,
 };
 
 # Revealing Elements on Scroll
+
+# Defer and Async Script loading
+
+`<script async src="script.js">`
+`<script defer src="script.js">`
+
+- End of Body
+
+1. Regular `<script src="script.js">`
+
+- Scripts are fetched and executed **after the html is completely parsed** .
+
+2. Async in Head
+
+- Scripts are fetched **asynchronously** and executed **immediately**
+- Usually the DOMContentLoaded event waits for all scrips to execute, except for async scripts. So, DOMContentLoaded does not wait for an async script
+- Script not guaranteed to execute in order
+- use for 3rd-party scripts where order doesn't matter(e.g. Google Analytics)
+
+3. Defer in Head
+
+- Scripts are fetched **asynchronously** and executed **after the html is completely parsed**
+- DOMContentLoaded event fires after defer script is executed
+- scripts are executed in order
+- _This is overall the best solution! use for your own scripts, and when order matters(e.g. including a library)_
