@@ -9,3 +9,7 @@
 - Application Programming Interface: Piece of software that can be used by another piece of software, in order to allow applications to talk to each other.
 
 - **"Online" API:** Application running on a server, that receives requests for data, and sends data back as response;
+
+---
+
+- **CORS:** Cross Origin Resource Sharing.
