@@ -13,3 +13,6 @@
 ---
 
 - **CORS:** Cross Origin Resource Sharing.
+
+- **TCP:** Transmission Control Protocol.
+- **IP:** Internet Protocol.
