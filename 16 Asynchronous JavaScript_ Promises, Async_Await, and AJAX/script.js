@@ -54,7 +54,7 @@ const renderCountry = function (data, className = '') {
   countriesContainer.insertAdjacentHTML('beforeend', html);
   countriesContainer.style.opacity = 1;
 };
-
+/*
 const getCountryAndNeighbour = function (country) {
   const request = new XMLHttpRequest();
   request.open('GET', `https://restcountries.com/v2/name/${country}`);
@@ -85,5 +85,23 @@ const getCountryAndNeighbour = function (country) {
   });
 };
 getCountryAndNeighbour('Bangladesh');
-getCountryData('Pakistan');
-getCountryData('Iran');
+// getCountryAndNeighbour('Pakistan');
+// getCountryAndNeighbour('Iran');
+*/
+
+//////////// LECture 3 /== Promises ===/////////
+const request = fetch(`https://restcountries.com/v2/name/bangladesh`);
+console.log(request);
+
+const getCountryData = function (country) {
+  fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(function (response) {
+      console.log(response);
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      renderCountry(data[0]);
+    });
+};
+getCountryData('Bangladesh');
