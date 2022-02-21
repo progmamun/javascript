@@ -12,6 +12,11 @@
 
 ---
 
+## What happens when we access a web server
+
+![2022-02-21_08-57](https://user-images.githubusercontent.com/67066348/154937629-197c50d9-79f3-49be-a91b-7a3b272b6df7.png)
+![2022-02-21_11-13](https://user-images.githubusercontent.com/67066348/154937651-d4ed40c3-42c7-4d63-a9ed-6c4bce9ec9cd.png)
+
 - **CORS:** Cross Origin Resource Sharing.
 
 - **TCP:** Transmission Control Protocol.
