@@ -90,6 +90,7 @@ getCountryAndNeighbour('Bangladesh');
 */
 
 //////////// LECture 3 /== Promises ===/////////
+/*
 const request = fetch(`https://restcountries.com/v2/name/bangladesh`);
 console.log(request);
 
@@ -103,5 +104,14 @@ const getCountryData = function (country) {
       console.log(data);
       renderCountry(data[0]);
     });
+};
+getCountryData('Bangladesh'); */
+
+const request = fetch(`https://restcountries.com/v2/name/bangladesh`);
+
+const getCountryData = function (country) {
+  fetch(`https://restcountries.com/v2/name/${country}`)
+    .then(response => response.json())
+    .then(data => renderCountry(data[0]));
 };
 getCountryData('Bangladesh');
