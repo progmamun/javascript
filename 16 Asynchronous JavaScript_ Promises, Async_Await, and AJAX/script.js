@@ -208,7 +208,7 @@ const whereAmI = function (lat, lng) {
       return res.json();
     })
     .then(data => {
-      // console.log(data);
+      console.log(data);
       // console.log(`You are in ${data.city}, ${data.country}`);
       return fetch(`https://restcountries.com/v2/name/${data.country}`);
     })
