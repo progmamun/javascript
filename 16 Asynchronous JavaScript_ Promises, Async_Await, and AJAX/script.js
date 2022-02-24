@@ -201,6 +201,7 @@ btn.addEventListener('click', function () {
 // };
 
 //==========/// Coding-Challenge- #1 /////
+/*
 const whereAmI = function (lat, lng) {
   fetch(`https://geocode.xyz/${lat}, ${lng}?geoit=json`)
     .then(res => {
@@ -222,3 +223,14 @@ const whereAmI = function (lat, lng) {
 };
 
 whereAmI(52.508, 13.381);
+*/
+
+setTimeout(() => console.log('0 sec timer'), 0);
+Promise.resolve('Resolved promise 1').then(res => console.log(res));
+
+Promise.resolve('Resolved promise 2').then(res => {
+  for (let i = 0; i < 10000000; i++) {
+    console.log(res);
+  }
+});
+console.log('Test end');
