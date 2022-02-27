@@ -182,7 +182,7 @@ btn.addEventListener('click', function () {
 //       if (!neighbour) return;
 
 //       // Country 2
-//       return fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
+//       return fetch(`https://restcountries.com/v2/alpha/${neighbour}`);
 //     })
 //     .then(response => {
 //       if (!response.ok)
@@ -316,4 +316,32 @@ createImage('img/img-1.jpg')
   })
   .catch(err => console.log(err));
 */
-///////
+////=== consuming promises with async await =====////
+
+const getPosition = function () {
+  return new Promise(function (resolve, reject) {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const whereAmI = async function () {
+  // Geolocation
+  const pos = await getPosition();
+  const { latitude: lat, longitude: lng } = pos.coords;
+
+  // Reverse geocoding
+  const resGeo = await fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`);
+  const dataGeo = await resGeo.json();
+  console.log(dataGeo);
+
+  // country data
+  const res = await fetch(
+    `https://restcountries.com/v2/name/${dataGeo.country}`
+  );
+  const data = await res.json();
+  console.log(data);
+  renderCountry(data[0]);
+};
+whereAmI();
+console.log('First');
+// whereAmI(52.508, 13.381);
