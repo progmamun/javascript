@@ -353,3 +353,14 @@ const whereAmI = async function () {
 whereAmI();
 console.log('First');
 // whereAmI(52.508, 13.381);
+
+// returning values form async functions =======///
+(async function () {
+  try {
+    const city = await whereAmI();
+    console.log(`2: ${city}`);
+  } catch (err) {
+    console.error(`2: ${err.message}`);
+  }
+  console.log(`3: Finished getting location`);
+})();
