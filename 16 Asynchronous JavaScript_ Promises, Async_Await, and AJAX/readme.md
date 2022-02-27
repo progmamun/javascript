@@ -22,3 +22,7 @@
 - **TCP:** Transmission Control Protocol.
 - **IP:** Internet Protocol.
 - **Promise:** An object that is used as a placeholder for the future result of an asynchronous operation. | A container for a future value.
+
+---
+
+### **Promise.all combinator function**
