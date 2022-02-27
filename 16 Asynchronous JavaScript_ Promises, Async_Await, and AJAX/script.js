@@ -27,6 +27,13 @@ const renderError = function (msg) {
   countriesContainer.style.opacity = 1;
 };
 
+const getJSON = function (url, errorMsg = 'Something went wrong') {
+  return fetch(url).then(response => {
+    if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+
+    return response.json();
+  });
+};
 ///////////////////////////////////////
 /*
 const getCountryData = function (country) {
@@ -365,3 +372,4 @@ console.log('First');
   console.log(`3: Finished getting location`);
 })();
 */
+/////=====  running Promises in parallel =====////
