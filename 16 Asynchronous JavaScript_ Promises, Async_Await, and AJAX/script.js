@@ -270,7 +270,7 @@ Promise.reject(new Error('Problem!')).catch(x => console.log(x));
 */
 
 ////====== coding challenge 2 ======/////
-
+/*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
@@ -315,5 +315,5 @@ createImage('img/img-1.jpg')
     currentImg.style.display = 'none';
   })
   .catch(err => console.log(err));
-
+*/
 ///////
