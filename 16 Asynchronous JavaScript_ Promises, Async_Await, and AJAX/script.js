@@ -317,7 +317,7 @@ createImage('img/img-1.jpg')
   .catch(err => console.log(err));
 */
 ////=== consuming promises with async await =====////
-
+/*
 const getPosition = function () {
   return new Promise(function (resolve, reject) {
     navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -364,3 +364,4 @@ console.log('First');
   }
   console.log(`3: Finished getting location`);
 })();
+*/
