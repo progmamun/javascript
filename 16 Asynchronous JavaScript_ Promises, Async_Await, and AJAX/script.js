@@ -418,3 +418,13 @@ Promise.race([
 ])
   .then(res => console.log(res[0]))
   .catch(err => console.error(err));
+
+/// ===== Promise.allSettled ====///
+
+Promise.allSettled([
+  Promise.resolve('Success'),
+  Promise.resolve('Error'),
+  Promise.resolve('Another success'),
+])
+  .then(res => console.log(res))
+  .catch(err => console.log(err));

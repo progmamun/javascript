@@ -25,6 +25,10 @@
 
 ---
 
-### **Promise.all combinator function**
+### **Promise.all combinator function** | one error it will short circuit
+
+### Promise.allSettled (es2020) | never will be short circuit
+
+### Promise.any (es2021) |
 
 - `(_)` = throw away variable.
