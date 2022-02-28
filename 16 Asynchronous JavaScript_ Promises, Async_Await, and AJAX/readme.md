@@ -29,6 +29,8 @@
 
 ### Promise.allSettled (es2020) | never will be short circuit
 
-### Promise.any (es2021) |
+### Promise.any (es2021) | ignore rejected promise, fulfilled promise,
+
+**Important:** Promise.all and Promise.race
 
 - `(_)` = throw away variable.
