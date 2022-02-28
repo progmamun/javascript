@@ -26,3 +26,5 @@
 ---
 
 ### **Promise.all combinator function**
+
+- `(_)` = throw away variable.
